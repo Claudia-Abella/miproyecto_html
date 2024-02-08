@@ -1,0 +1,151 @@
+/* -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* ESTILOS PAGINA GENERALES -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+/* ESTILOS GENERALES */
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.mi_encabezado{
+    grid-area: header;
+    background: linear-gradient(to bottom right,cadetblue, black);
+    color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.mi_principal{
+    grid-area: main;
+}
+
+.mi_pie{
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom right,rgb(191, 224, 225), black);
+    
+}
+
+.mi_contenedor{
+    display: grid;
+    width: 100vw;
+    min-height: 100%;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 100%;
+    grid-template-areas:
+    "header" 
+    "main" 
+    "footer";
+    border: 1px solid black;
+}
+
+
+
+/* ESTILOS HEADER */
+h1{
+    margin-left: 25px;
+}
+.navigationBarList{
+    list-style-type: none; /*cambiar la forma de la lista a "ninguno"*/
+    display: flex;/*se pone en fila por defecto, si ponemos "colum" se pone en columna*/
+    flex-direction: row;
+    gap: 20px;/*para abrir huecos entre ellos*/
+    margin-right: 25px; 
+ }
+
+.enlace{
+    text-decoration: none;/*quita la linea que subraya los elementos de la lista*/
+    color: grey;
+    font-size: 1.4em;/*2em, es el doble del tamaño base podemos poner tambien 20px*/
+}
+
+.enlace:hover{
+    color: burlywood;
+}
+
+.active{
+    color: white;/*asi sabemos donde estamos*/
+}
+
+
+
+/* ESTILOS FOOTER */
+.mi_pie > .aviso_legal{
+    text-align: center;
+    font-size: 25px;
+    padding: 25px;
+    color: white;
+}
+
+
+
+
+/* -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* ESTILOS INDEX.HTML -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+
+
+
+
+/* -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* ESTILOS GALERIA.HTML -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+.image_container{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.fila{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+}
+.columna1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.columna1 div{
+    text-align: center;
+    border: 1px solid black;
+}
+
+
+.imagenes_gato{
+    width: 250px;
+    height: 250px;
+}
+
+
+
+/* -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*- ESTILOS PRESUPUESTO.HTML -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+
+.form1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.mi_form{
+    width: 90%;
+}
+
+
+/* -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*- ESTILOS CONTACTO.HTML -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+
+
+
