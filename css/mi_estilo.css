@@ -10,7 +10,7 @@ html, body{
 
 .mi_encabezado{
     grid-area: header;
-    background: linear-gradient(to bottom right,cadetblue, black);
+    background: linear-gradient(to bottom right,rgb(72, 19, 92), black);
     color: whitesmoke;
     display: flex;
     flex-direction: row;
